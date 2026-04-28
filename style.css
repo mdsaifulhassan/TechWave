@@ -15,3 +15,68 @@ body {
   font-style: normal;
 }
 
+/* Navbar */
+.nav-bar {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 28px 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.nav-title p {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.logo-white {
+  color: #ffffff;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Nav Links */
+.nav-link {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+
+.nav-link li {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #d8cfe6;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-link li:hover {
+  color: #fb09b4;
+}
+
+/* Button */
+.btn button {
+  padding: 13px 28px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #fb09b4, #9100f8);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(251, 9, 180, 0.35);
+}
+
