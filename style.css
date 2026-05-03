@@ -232,8 +232,104 @@ body {
   font-size: 14px;
   letter-spacing: 0.5px;
 }
+.choose-section {
+  background: #160726;
+  color: #ffffff;
+  padding: 90px 120px 100px;
+}
 
+.choose-section h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 34px;
+}
 
+.choose-grid {
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "audio mobile mobile"
+    "audio global global"
+    "interview interview resource";
+  gap: 22px;
+}
+
+.choose-section {
+  background: #160726;
+  color: #ffffff;
+  padding: 90px 120px 100px;
+}
+
+.choose-section h2 {
+  max-width: 950px;
+  margin: 0 auto 30px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.choose-grid {
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-rows: 175px 175px 210px;
+  gap: 22px;
+  grid-template-areas:
+    "audio mobile mobile"
+    "audio global global"
+    "interview interview resource";
+}
+
+.choose-card {
+  background: #2a0d45;
+  border-radius: 24px;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.choose-card img {
+  width: 42px;
+  margin-bottom: 18px;
+}
+
+.choose-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.choose-card p {
+  color: #cfc6da;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.card-a {
+  grid-area: audio;
+  justify-content: center;
+}
+
+.card-b {
+  grid-area: mobile;
+}
+
+.card-c {
+  grid-area: global;
+}
+
+.card-d {
+  grid-area: interview;
+}
+
+.card-e {
+  grid-area: resource;
+}
 /* Responsivness */
 
 @media screen and (max-width: 576px) {
@@ -350,6 +446,46 @@ body {
     font-size: 11px;
   }
 }
+.choose-section {
+    padding: 42px 18px 55px;
+  }
+
+  .choose-section h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .choose-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "audio"
+      "mobile"
+      "global"
+      "interview"
+      "resource";
+    gap: 12px;
+  }
+
+  .choose-card {
+    border-radius: 14px;
+    padding: 22px 18px;
+  }
+
+  .choose-card img {
+    width: 36px;
+    margin-bottom: 14px;
+  }
+
+  .choose-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .choose-card p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .nav-bar {
@@ -396,3 +532,14 @@ body {
     gap: 35px;
   }
 }
+.choose-section {
+    padding: 70px 40px 80px;
+  }
+
+  .choose-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "audio mobile"
+      "global global"
+      "interview resource";
+  }
