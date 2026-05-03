@@ -176,3 +176,166 @@ body {
 .subscribe-btn:hover {
   transform: translateY(-2px);
 }
+
+/* About Section */
+.about-section {
+  background: #160726;
+  color: #ffffff;
+  text-align: center;
+  padding: 90px 120px 100px;
+}
+
+.about-content {
+  max-width: 950px;
+  margin: 0 auto 60px;
+}
+
+.about-content h2 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+.about-content p {
+  color: #cfc6da;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+.about-content p:last-child{
+  margin-top: 25px;
+}
+.section-line {
+  max-width: 950px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 0 auto 55px;
+}
+
+.stats-box {
+  max-width: 950px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.stat-item h3 {
+  color: #00ff99;
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.stat-item p {
+  color: #cfc6da;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+
+/* Responsivness */
+
+@media screen and (max-width: 576px) {
+  .nav-bar {
+    padding: 18px 20px;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .nav-link {
+    gap: 1.5rem;
+  }
+
+  .nav-title p {
+    font-size: 26px;
+  }
+
+  .btn {
+    padding-right: 0;
+  }
+
+  .hero-section {
+    min-height: 560px;
+    padding: 65px 20px 60px;
+    background-position: center;
+  }
+
+  .hero-card {
+    width: 190px;
+    height: 190px;
+  }
+
+  .mic-icon {
+    width: 68px;
+  }
+
+  .hero-section h1 {
+    font-size: 38px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section {
+    padding: 60px 20px 70px;
+  }
+
+  .about-content h2 {
+    font-size: 32px;
+  }
+
+  .stats-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .nav-bar {
+    padding: 20px 40px;
+  }
+
+  .nav-link {
+    gap: 2rem;
+  }
+
+  .nav-title p {
+    font-size: 28px;
+  }
+
+  .hero-section {
+    min-height: 620px;
+    padding-top: 80px;
+  }
+
+  .hero-card {
+    width: 230px;
+    height: 230px;
+  }
+
+  .mic-icon {
+    width: 82px;
+  }
+
+  .hero-section h1 {
+    font-size: 46px;
+  }
+
+  .about-section {
+    padding: 70px 40px 80px;
+  }
+
+  .about-content h2 {
+    font-size: 36px;
+  }
+
+  .stats-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+}
