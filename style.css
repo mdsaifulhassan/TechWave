@@ -238,59 +238,116 @@ body {
 
 @media screen and (max-width: 576px) {
   .nav-bar {
-    padding: 18px 20px;
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  .nav-link {
-    gap: 1.5rem;
+    padding: 14px 18px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   }
 
   .nav-title p {
-    font-size: 26px;
+    font-size: 22px;
   }
 
+  .nav-link,
   .btn {
-    padding-right: 0;
+    display: none;
+  }
+
+  .nav-bar::after {
+    content: "☰";
+    color: #ffffff;
+    font-size: 20px;
   }
 
   .hero-section {
-    min-height: 560px;
-    padding: 65px 20px 60px;
-    background-position: center;
+    min-height: 520px;
+    padding: 35px 18px 45px;
+    background-image: url("./assets/hero-bg.png");
+    background-size: cover;
+    background-position: center top;
   }
 
   .hero-card {
-    width: 190px;
-    height: 190px;
+    width: 170px;
+    height: 170px;
+    margin-bottom: 20px;
   }
 
   .mic-icon {
-    width: 68px;
+    width: 58px;
+  }
+
+  .new-badge {
+    top: 5px;
+    right: -8px;
+    padding: 6px 13px;
+    font-size: 11px;
   }
 
   .hero-section h1 {
-    font-size: 38px;
+    font-size: 34px;
+    margin-bottom: 8px;
+  }
+
+  .hero-section p {
+    max-width: 280px;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 18px;
   }
 
   .hero-buttons {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .spotify-btn,
+  .subscribe-btn {
+    width: auto;
+    padding: 8px 13px;
+    font-size: 11px;
   }
 
   .about-section {
-    padding: 60px 20px 70px;
+    padding: 38px 20px 50px;
+  }
+
+  .about-content {
+    margin-bottom: 36px;
   }
 
   .about-content h2 {
-    font-size: 32px;
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+
+  .about-content p {
+    font-size: 12px;
+    line-height: 1.55;
+    margin-bottom: 8px;
+  }
+
+  .about-content p:last-child {
+    margin-top: 12px;
+  }
+
+  .section-line {
+    display: none;
   }
 
   .stats-box {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 20px;
+  }
+
+  .stat-item h3 {
+    font-size: 34px;
+    margin-bottom: 8px;
+  }
+
+  .stat-item p {
+    font-size: 11px;
   }
 }
 
