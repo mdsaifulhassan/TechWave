@@ -25,7 +25,6 @@ body {
   align-items: center;
 }
 
-/* Logo */
 .nav-title p {
   font-size: 34px;
   font-weight: 800;
@@ -37,13 +36,12 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+  background: linear-gradient(90deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Nav Links */
 .nav-link {
   display: flex;
   gap: 4rem;
@@ -62,7 +60,6 @@ body {
   color: #fb09b4;
 }
 
-/* Button */
 .btn button {
   padding: 13px 28px;
   border: none;
@@ -80,8 +77,7 @@ body {
   box-shadow: 0 8px 25px rgba(251, 9, 180, 0.35);
 }
 
-/* Banner Section */
-
+/* Hero Section */
 .hero-section {
   position: relative;
   min-height: 720px;
@@ -89,12 +85,10 @@ body {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
   padding-top: 115px;
   color: #ffffff;
 }
@@ -114,7 +108,6 @@ body {
 .mic-icon {
   position: absolute;
   width: 95px;
-  height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -202,9 +195,11 @@ body {
   line-height: 1.8;
   margin-bottom: 10px;
 }
-.about-content p:last-child{
+
+.about-content p:last-child {
   margin-top: 25px;
 }
+
 .section-line {
   max-width: 950px;
   height: 1px;
@@ -232,6 +227,8 @@ body {
   font-size: 14px;
   letter-spacing: 0.5px;
 }
+
+/* Choose Section */
 .choose-section {
   background: #160726;
   color: #ffffff;
@@ -239,45 +236,19 @@ body {
 }
 
 .choose-section h2 {
+  margin: 0 auto 40px;
   text-align: center;
-  font-size: 36px;
-  font-weight: 900;
-  margin-bottom: 34px;
+  font-size: 48px;
+  font-weight: bold;
 }
 
 .choose-grid {
-  max-width: 950px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "audio mobile mobile"
-    "audio global global"
-    "interview interview resource";
-  gap: 22px;
-}
-
-.choose-section {
-  background: #160726;
-  color: #ffffff;
-  padding: 90px 120px 100px;
-}
-
-.choose-section h2 {
-  max-width: 950px;
-  margin: 0 auto 30px;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 900;
-}
-
-.choose-grid {
-  max-width: 950px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 300px 1fr 300px;
-  grid-template-rows: 175px 175px 210px;
-  gap: 22px;
+  grid-template-rows: 240px 240px 273px;
+  gap: 30px;
   grid-template-areas:
     "audio mobile mobile"
     "audio global global"
@@ -285,34 +256,33 @@ body {
 }
 
 .choose-card {
-  background: #2a0d45;
-  border-radius: 24px;
-  padding: 34px;
+  background: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .choose-card img {
-  width: 42px;
-  margin-bottom: 18px;
+  width: 60px;
+  margin-bottom: 16px;
 }
 
 .choose-card h3 {
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight:  bold;
+  margin-bottom: 16px;
 }
 
 .choose-card p {
-  color: #cfc6da;
-  font-size: 14px;
-  line-height: 1.7;
+  color: #FFFFFF;
+  font-size: 1rem;
+  line-height: 24px;
 }
 
 .card-a {
   grid-area: audio;
-  justify-content: center;
 }
 
 .card-b {
@@ -330,8 +300,8 @@ body {
 .card-e {
   grid-area: resource;
 }
-/* Responsivness */
 
+/* Mobile */
 @media screen and (max-width: 576px) {
   .nav-bar {
     padding: 14px 18px;
@@ -358,9 +328,6 @@ body {
   .hero-section {
     min-height: 520px;
     padding: 35px 18px 45px;
-    background-image: url("./assets/hero-bg.png");
-    background-size: cover;
-    background-position: center top;
   }
 
   .hero-card {
@@ -399,7 +366,6 @@ body {
 
   .spotify-btn,
   .subscribe-btn {
-    width: auto;
     padding: 8px 13px;
     font-size: 11px;
   }
@@ -420,11 +386,6 @@ body {
   .about-content p {
     font-size: 12px;
     line-height: 1.55;
-    margin-bottom: 8px;
-  }
-
-  .about-content p:last-child {
-    margin-top: 12px;
   }
 
   .section-line {
@@ -439,14 +400,13 @@ body {
 
   .stat-item h3 {
     font-size: 34px;
-    margin-bottom: 8px;
   }
 
   .stat-item p {
     font-size: 11px;
   }
-}
-.choose-section {
+
+  .choose-section {
     padding: 42px 18px 55px;
   }
 
@@ -456,8 +416,8 @@ body {
   }
 
   .choose-grid {
-    display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
       "audio"
       "mobile"
@@ -478,7 +438,7 @@ body {
   }
 
   .choose-card h3 {
-    font-size: 16px;
+    font-size: 24px;
     margin-bottom: 10px;
   }
 
@@ -486,7 +446,9 @@ body {
     font-size: 12px;
     line-height: 1.6;
   }
+}
 
+/* medium device */
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .nav-bar {
     padding: 20px 40px;
@@ -531,15 +493,22 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 35px;
   }
-}
-.choose-section {
+
+  .choose-section {
     padding: 70px 40px 80px;
+  }
+
+  .choose-section h2 {
+    font-size: 36px;
   }
 
   .choose-grid {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
       "audio mobile"
       "global global"
       "interview resource";
+    gap: 18px;
   }
+}
