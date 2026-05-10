@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Wave</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <!-- Font Awesome Cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body class="inter-font">
@@ -20,23 +23,33 @@
       <li>Episodes</li>
       <li>Host</li>
     </ul>
-    <div class="btn">
-      <button>Subscribe</button>
-    </div>
+    <button class="c-btn">Subscribe
+      <img src="./assets/right-arrow.png" alt="r-arrow" style=" width:20px; height:20px;">
+    </button>
   </nav>
-  <section class="hero-section">
-    <div class="hero-card">
-      <img src="./assets/hero-circle.png" alt="Gradient circle" class="hero-circle">
-      <img src="./assets/microphone.png" alt="Microphone" class="mic-icon">
-      <span class="new-badge">NEW</span>
+  <section class="banner">
+    <div id="hero-circle">
+      <img class="circle" src="./assets/hero-circle.png" alt="circle">
+
+      <img class="microphone" src="./assets/microphone.png" alt="microphone">
+
+      <span class="badge">NEW</span>
     </div>
+    <div class="banner-content">
+      <h1>TechWave</h1>
+      <p>Your daily dose of tech insights, productivity hacks,<br> and personal growth</p>
 
-    <h1>TechWave</h1>
-    <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+      <div class="banner-actions">
+        <button class="btn btn-spotify">
+          <i class="fa-brands fa-spotify"></i>
+          Listen On Spotify
+        </button>
 
-    <div class="hero-buttons">
-      <button class="spotify-btn">◎ Listen On Spotify</button>
-      <button class="subscribe-btn">✉ Subscribe</button>
+        <button class="btn btn-subscribe">
+          <i class="fa-regular fa-envelope"></i>
+          Subscribe
+        </button>
+      </div>
     </div>
   </section>
   </section>
@@ -204,6 +217,19 @@
       </div>
     </div>
   </section>
+
+  <footer class="footer">
+    <img src="./assets/footer-logo.png" alt="logo" class="logo">
+
+    <div class="socials">
+      <a href="#"><i class="fa-brands fa-spotify"></i> Spotify</a>
+      <a href="#"><i class="fa-brands fa-apple"></i> Apple Podcasts</a>
+      <a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a>
+      <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+    </div>
+
+    <p class="copy">© 2026 TechWave Podcast. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
