@@ -361,7 +361,53 @@ nav button:hover{
 .card-e {
   grid-area: resource;
 }
+/* footer section */
 
+.footer {
+    background: #0c0729 url('../assets/bottombg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 412px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.logo {
+    height: 60px;
+    max-width: 410px;
+}
+
+.socials {
+    display: grid;
+    gap: 24px;
+    font-size: 15px;
+    grid-template-columns: repeat(4, auto);
+}
+
+.socials a {
+    color: #cfcfcf;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: #fff;
+}
+
+.copy {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #B8B8B8;
+}
 /* Mobile */
 @media screen and (max-width: 576px) {
   .nav-bar {
